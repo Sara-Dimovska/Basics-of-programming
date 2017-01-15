@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+#include <cmath>
+int main()
+{
+    double a[5],b[5],zbir[5];
+    int i;
+    cout<<"Vneste gi elementite na prvata niza: "<<endl;
+    for(i=0;i<5;i++)
+    {
+        cout<<"a["<<i<<"]= ";
+        cin>>a[i];
+    }
+    cout<<"Vneste gi elementite na vtorata niza: "<<endl;
+    for(i=0;i<5;i++)
+    {
+        cout<<"b["<<i<<"]= ";
+        cin>>b[i];
+    }
+    cout<<"Zbirot od soodvetnite elementi na dvete nizi e slednata niza: "<<endl;
+    for(i=0;i<5;i++)
+    {
+        zbir[i]=a[i]+b[i]; //i-tio element od dvete nizi go sobirame i rezultato ni e zbir
+        cout<<zbir[i]<<","; //pecateme go zbiro na itite elementi so zapirka posle niv
+    }
+    return 0;
+}

@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+#include <cmath>
+int main()
+{
+    double a[10],b[10];
+    int i;
+    cout<<"Vneste gi elementite na prvata niza: "<<endl;
+    for(i=0;i<10;i++)
+    {
+        cout<<"a["<<i<<"]= ";
+        cin>>a[i];
+    }
+    cout<<"Vneste gi elementite na prvata niza: "<<endl;
+    for(i=0;i<10;i++)
+    {
+        cout<<"b["<<i<<"]= ";
+        cin>>b[i];
+    }
+    cout<<"Isti elementi od dvete nizi ima na poziciite: "<<endl;
+    for(i=0;i<10;i++)
+    {
+        if(a[i]==b[i]) //ako itio element od prvata niza e isti so itio element od vtorata niza
+        {
+            cout<<i<<endl; //da ja pecate pozijata na koja so se naoga taj element, ustvari i
+        }
+    }
+    return 0;
+}
